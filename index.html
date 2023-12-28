@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Login</title>
+  
+ <!-- bootstrab -->
+ <link rel="stylesheet" href="./css/bootstrap.min.css">
+ <link rel="stylesheet" href="./css/all.min.css">
+
+ <!-- main style -->
+ <link rel="stylesheet" href="./css/style.css">
+
+
+ <!-- fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Pacifico&family=Righteous&family=Titillium+Web:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   
+<!--  inline script -->
+
+<div class="container mt-5 mx-auto  ">
+<div class="w-75 mt-5 mx-auto group text-center p-5  " id="mainForm">
+
+
+<h1 class="py-2 " >Smart Login System</h1>
+
+<div id="ShowHidename" class="form-group mb-1 d-none ShowHidenameClass">
+  <input type="text" class="form-control " id="YourName" placeholder="Enter Your Name">
+</div>
+
+<div class="form-group mb-1">
+  <input type="text" class="form-control mt-3" id="yourMail" placeholder="Enter Your Email">
+</div>
+
+<div class="form-group mb-1">
+  
+  <input type="text" class="form-control my-3 " id="yourPassword" placeholder="Enter Your Password">
+ </div>
+<p id="requiredData" class="text-danger m-3  d-none ">All inputs is required</p>
+
+  <button onclick="SignUpBtn()" class="btn btn-outline-info  my-3 w-100 d-none" id="SignUpBtn">SignUp</button>    
+  <button onclick="LoginBtn()" class="btn btn-outline-info  my-3 w-100"  id="LoginBtn">Login</button>
+   <!-- <p class="text-white">You have an account? <a class="text-white " id ="AddOrNewAbtn" onclick="AddOrNewAcc()" href="/">Signin</a></p> -->
+ <p class="text-white">You have an account?
+  <button class="text-white btn btn-link" onclick="AddOrNewAcc()"  id="AddOrNewAbtn"  >SignUp</button> 
+                                                              
+</div>
+
+
+
+<div class="w-75 mt-5 mx-auto group text-center p-5 h1 text-danger d-none " id="successForm">
+ssssssss
+ 
+</div>
+</div>
+  
+<!--  external script -->
+<script src="js/index.js" >   </script>
+
+ 
+</body>
+
+</html>
